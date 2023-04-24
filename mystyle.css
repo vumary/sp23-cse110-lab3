@@ -13,6 +13,20 @@
     height: 3.5cm;
 }
 
+/*Apply styling when the browser window is 800px or less*/
+@media only screen and (max-width: 800px){
+    /* Class Selector implementing flex*/
+    .meeting {
+        display: flex;
+        background-color: lightblue;
+    }
+}
+
+/* Class Selector implementing grid */
+.meeting2 {
+    display: grid;
+}
+
 /* ID Selector */
 #recap {
     color: hsl(240, 100%, 50%);
@@ -25,4 +39,68 @@ h1 {
     color: darkgreen;
     height: 3vh;
     width: 100vw;
+}
+
+/* Attribute Selector */
+h2[attribute="agenda"] {
+    border-style: double;
+    border-color: cadetblue;
+    border-width: 20px;
+    border-radius: 10px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    text-align: center;
+}
+
+/* Psuedo-class Selector */
+a:hover {
+    color: lightblue;
+    text-decoration: wavy;
+}
+/* Psuedo-class Selector (Applys to <a> elements when you click on the link)*/
+a:active {
+    color:hsl(240, 100%, 50%);
+    text-decoration: line-through;
+}
+
+/* Selector List (Applys to both h2 and h3)*/
+h2, h3 {
+    display: block;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+/* Descendant Combinator (Applys to li elements that are in ol) */
+ol li {
+    position: static;
+}
+
+/* Child Combinator (Applys to li elements that are in ul) */
+ul > li {
+    position: relative;
+}
+
+/* General Sibling Combinator (Applys to all em elements that come after p element) */
+p ~ em {
+    display: none;
+}
+
+/* Adjacent Sibling Combinator (Applys to all video elements that come right after p) */
+p + video {
+    width: 500px;
+    height: 200px;
+}
+
+/* Combining Two Selectors (Applys to all h2 elements with the className "note" */
+h2.note {
+    background-color: lightblue;
 }
