@@ -3,6 +3,10 @@
     <head> 
         <title>Meeting Minutes</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <meta name="author" content="Mary Vu">
     </head>
     <body>
@@ -15,7 +19,6 @@
         <main>
             <div class="attendees">
                 <h4>Attendees:</h4>
-    
                 <ul>
                     <li> Mary Vu </li>
                     <li> Julia Ma </li>
@@ -25,7 +28,7 @@
             </div>
             <hr>
             <section>
-                <h2> Recap of last meeting </h2>
+                <h2 id="recap"> Recap of last meeting </h2>
                 <p> Last meeting we were brainstorming project ideas that are <em>do-able in the span of one summer</em>.
                     We wanted a project that would force us to learn as well as a project that would be practical.
                     Eventually, we decided to agree on the idea of a pomodoro app. Even though many already exist,
@@ -33,13 +36,13 @@
                 </p>
             </section>
             <section>
-                <h2>Agenda for today: </h2>
+                <h2 attribute="agenda">Agenda for today: </h2>
                 <ol>
                     <li><strong>Brainstorm</strong> ideas to make our app <i>unique</i></li>
                     <li>Create a <a href="github.com"><b>Github</b></a> repo and add all members</li>
                     <li>Create a <b>Figma</b> and add all members</li>
                 </ol>
-                <h2>Notes</h2>
+                <h2 className="note">Notes</h2>
                 <p>Julia's suggestion for what the app should look like below:</p>
                 <img src="forest1.jpg" alt="Pomodoro App">
                 <p>Recording of some ideas that came to mind:</p>

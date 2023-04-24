@@ -1,0 +1,28 @@
+/* Stylesheet */
+
+/* Universal Selector */
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E8E8E8;
+}
+
+/* Class Selector */
+.attendees {
+    color: rgb(106, 90, 205);
+    width: 200px;
+    height: 3.5cm;
+}
+
+/* ID Selector */
+#recap {
+    color: hsl(240, 100%, 50%);
+    width: 3in;
+    height: 2em;    
+}
+
+/* Element Selector */
+h1 {
+    color: darkgreen;
+    height: 3vh;
+    width: 100vw;
+}

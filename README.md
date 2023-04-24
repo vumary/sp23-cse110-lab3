@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-https://vumary.github.io/Lab2_Starter/
+vumary.github.io/sp23-cse110-lab3
